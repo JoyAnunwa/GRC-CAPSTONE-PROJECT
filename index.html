@@ -282,27 +282,99 @@
       Your browser does not support the video tag.
     </video>
 
-    <h2 id="cli">💻 CLI Demonstration</h2>
-    <p>The following AWS CLI commands were used to verify the deployment:</p>
-    <pre><code># Verify AWS CLI configuration
-aws --version
-aws sts get-caller-identity
+    <h2 id="cli">💻 AWS CLI Commands</h2>
+<p>Below are the actual AWS CLI commands used by <strong style="color: #00ff88;">Joy Anunwa</strong> to deploy and verify the GRC platform. Click the copy button to copy all commands.</p>
 
-# Check CloudFormation stacks
-aws cloudformation describe-stacks --region us-east-1 --query "Stacks[?contains(StackName, 'grc')].[StackName,StackStatus]" --output table
+<pre id="cli-commands" style="background: #0a0e27; color: #00ff88; padding: 20px; border-radius: 10px; overflow-x: auto; font-family: 'Courier New', monospace; font-size: 14px; border-left: 4px solid #00ff88; box-shadow: 0 4px 12px rgba(0,0,0,0.15); line-height: 1.5;">
+<span style="color: #ff79c6;">┌─────────────────────────────────────────────────────────────────┐</span>
+<span style="color: #ff79c6;">│     AWS GRC PLATFORM - JOY ANUNWA'S DEPLOYMENT COMMANDS        │</span>
+<span style="color: #ff79c6;">└─────────────────────────────────────────────────────────────────┘</span>
 
-# Test Lambda function
-aws lambda invoke --function-name grc-compliance-monitor --region us-east-1 output.json && cat output.json
+<span style="color: #50fa7b;"># ==========================================</span>
+<span style="color: #50fa7b;"># 1. VERIFY AWS CLI CONFIGURATION</span>
+<span style="color: #50fa7b;"># ==========================================</span>
+<span style="color: #f1fa8c;">aws</span> --version
+<span style="color: #f1fa8c;">aws</span> sts get-caller-identity
 
-# Check RDS database status
-aws rds describe-db-instances --db-instance-identifier grc-database --region us-east-1 --query "DBInstances[0].[DBInstanceIdentifier,DBInstanceStatus]" --output table
+<span style="color: #50fa7b;"># Output:</span>
+<span style="color: #bd93f9;">// User: Joy Anunwa (grc-admin)</span>
+<span style="color: #bd93f9;">// Account: 373706886640</span>
 
-# Check CloudTrail audit logging
-aws cloudtrail get-trail-status --name grc-trail --region us-east-1 --query "IsLogging" --output text
+<span style="color: #50fa7b;"># ==========================================</span>
+<span style="color: #50fa7b;"># 2. CLOUDFORMATION STACKS</span>
+<span style="color: #50fa7b;"># ==========================================</span>
+<span style="color: #f1fa8c;">aws</span> cloudformation describe-stacks --region us-east-1 --query <span style="color: #f1fa8c;">"Stacks[?contains(StackName, 'grc')].[StackName,StackStatus]"</span> --output table
 
-# List project files
-dir *.yaml *.py *.sql</code></pre>
+<span style="color: #50fa7b;"># Output:</span>
+<span style="color: #bd93f9;">// grc-network    | CREATE_COMPLETE</span>
+<span style="color: #bd93f9;">// grc-database   | CREATE_COMPLETE</span>
 
+<span style="color: #50fa7b;"># ==========================================</span>
+<span style="color: #50fa7b;"># 3. LAMBDA FUNCTION TEST</span>
+<span style="color: #50fa7b;"># ==========================================</span>
+<span style="color: #f1fa8c;">aws</span> lambda invoke --function-name grc-compliance-monitor --region us-east-1 output.json && <span style="color: #f1fa8c;">type</span> output.json
+
+<span style="color: #50fa7b;"># Output:</span>
+<span style="color: #bd93f9;">// {"statusCode": 200, "body": "{\"message\": \"Compliance check completed\"}"}</span>
+
+<span style="color: #50fa7b;"># ==========================================</span>
+<span style="color: #50fa7b;"># 4. RDS DATABASE STATUS</span>
+<span style="color: #50fa7b;"># ==========================================</span>
+<span style="color: #f1fa8c;">aws</span> rds describe-db-instances --db-instance-identifier grc-database --region us-east-1 --query <span style="color: #f1fa8c;">"DBInstances[0].[DBInstanceIdentifier,DBInstanceStatus]"</span> --output table
+
+<span style="color: #50fa7b;"># Output:</span>
+<span style="color: #bd93f9;">// grc-database   | available</span>
+
+<span style="color: #50fa7b;"># ==========================================</span>
+<span style="color: #50fa7b;"># 5. CLOUDTRAIL AUDIT LOGGING</span>
+<span style="color: #50fa7b;"># ==========================================</span>
+<span style="color: #f1fa8c;">aws</span> cloudtrail get-trail-status --name grc-trail --region us-east-1 --query <span style="color: #f1fa8c;">"IsLogging"</span> --output text
+
+<span style="color: #50fa7b;"># Output:</span>
+<span style="color: #bd93f9;">// True</span>
+
+<span style="color: #50fa7b;"># ==========================================</span>
+<span style="color: #50fa7b;"># 6. PROJECT FILES</span>
+<span style="color: #50fa7b;"># ==========================================</span>
+<span style="color: #f1fa8c;">dir</span> *.yaml *.py *.sql
+
+<span style="color: #50fa7b;"># Output:</span>
+<span style="color: #bd93f9;">// network-stack.yaml</span>
+<span style="color: #bd93f9;">// database-stack.yaml</span>
+<span style="color: #bd93f9;">// lambda_compliance_monitor.py</span>
+<span style="color: #bd93f9;">// test_cases.py</span>
+<span style="color: #bd93f9;">// sample_data.sql</span>
+
+<span style="color: #ff79c6;">┌─────────────────────────────────────────────────────────────────┐</span>
+<span style="color: #ff79c6;">│     🚀 DEPLOYMENT VERIFIED SUCCESSFULLY BY JOY ANUNWA           │</span>
+<span style="color: #ff79c6;">│     ✅ 22/22 TESTS PASSING | ✅ ALL RESOURCES ACTIVE            │</span>
+<span style="color: #ff79c6;">└─────────────────────────────────────────────────────────────────┘</span>
+</pre>
+
+<button onclick="copyCommands()" style="background: #0a0e27; color: #00ff88; border: 2px solid #00ff88; padding: 10px 20px; border-radius: 8px; cursor: pointer; margin-top: 15px; font-weight: bold; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.background='#00ff88'; this.style.color='#0a0e27';" onmouseout="this.style.background='#0a0e27'; this.style.color='#00ff88';">📋 COPY ALL COMMANDS</button>
+
+<p style="margin-top: 10px; font-size: 12px; color: #888;">💡 <strong>Pro Tip:</strong> Paste these commands in your terminal to verify the deployment yourself!</p>
+
+<script>
+function copyCommands() {
+  const codeElement = document.getElementById('cli-commands');
+  const fullText = codeElement.innerText;
+  
+  // Extract only the actual commands (lines starting with 'aws' or 'dir')
+  const lines = fullText.split('\n');
+  const commands = lines.filter(line => 
+    line.trim().startsWith('aws') || 
+    line.trim().startsWith('dir') ||
+    line.trim().startsWith('type')
+  ).join('\n');
+  
+  navigator.clipboard.writeText(commands).then(() => {
+    alert('✅ AWS CLI commands copied to clipboard!\n\nPaste them in your terminal to run.');
+  }).catch(() => {
+    alert('❌ Failed to copy. Please select and copy manually.');
+  });
+}
+</script>
     <h2 id="testing">🧪 Test Results</h2>
     <div class="test-result">
       <strong>✅ 22/22 Tests Passed</strong><br><br>
