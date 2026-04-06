@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GRC Capstone Project</title>
+  <title>GRC Capstone Project | Joy Anunwa</title>
   <style>
     * {
       margin: 0;
@@ -13,43 +13,46 @@
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       display: flex;
-      background: #f5f5f5;
+      background: #0a0e27;
     }
+    /* Dark Sidebar Styles */
     .sidebar {
       width: 280px;
-      background: #fff;
+      background: #0a0e27;
       height: 100vh;
       position: fixed;
       overflow-y: auto;
-      border-right: 1px solid #e1e4e8;
+      border-right: 1px solid #1a1f3e;
       padding: 20px 0;
     }
     .sidebar h3 {
       padding: 0 20px 15px;
       font-size: 16px;
-      color: #24292e;
-      border-bottom: 1px solid #e1e4e8;
+      color: #00ff88;
+      border-bottom: 1px solid #1a1f3e;
       margin-bottom: 15px;
     }
     .sidebar a {
       display: block;
       padding: 8px 20px;
-      color: #586069;
+      color: #e0e0e0;
       text-decoration: none;
       font-size: 14px;
+      transition: all 0.3s ease;
     }
     .sidebar a:hover {
-      background: #f6f8fa;
-      color: #0366d6;
+      background: #1a1f3e;
+      color: #00ff88;
+      padding-left: 28px;
     }
     .sidebar .section-title {
       font-weight: 600;
-      color: #24292e;
+      color: #ff79c6;
       margin-top: 10px;
       margin-bottom: 5px;
       font-size: 12px;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 1px;
       padding-left: 20px;
     }
     .content {
@@ -57,6 +60,7 @@
       flex: 1;
       padding: 40px;
       max-width: calc(100% - 280px);
+      background: #f5f5f5;
     }
     .content h1 {
       font-size: 32px;
@@ -129,77 +133,61 @@
 </head>
 <body>
   <div class="sidebar">
-    <div class="sidebar" style="background: #0a0e27; color: #e0e0e0;">
-  <h3 style="color: #00ff88; border-bottom-color: #00ff88;">📊 GRC Capstone Project</h3>
-  <p style="font-size: 12px; color: #888; padding: 0 20px 15px 20px; margin: 0;">Joy Anunwa | AWS GRC Platform</p>
-  
-  <div class="section-title" style="color: #ff79c6;">📌 INTRODUCTION</div>
-  <a href="#overview" style="color: #e0e0e0;">📄 Project Overview</a>
-  <a href="#problem" style="color: #e0e0e0;">⚠️ Problem Statement</a>
-  <a href="#objectives" style="color: #e0e0e0;">🎯 Project Objectives</a>
-  <a href="#scope" style="color: #e0e0e0;">📐 Scope & Deliverables</a>
-  
-  <div class="section-title" style="color: #ff79c6;">🏗️ ARCHITECTURE</div>
-  <a href="#architecture" style="color: #e0e0e0;">🏛️ System Architecture</a>
-  <a href="#architecture-diagram" style="color: #e0e0e0;">📐 Architecture Diagram</a>
-  <a href="#architecture-design" style="color: #e0e0e0;">📋 Architecture Design</a>
-  <a href="#tech-stack" style="color: #e0e0e0;">💻 Technology Stack</a>
-  <a href="#security" style="color: #e0e0e0;">🔒 Security Design</a>
-  
-  <div class="section-title" style="color: #ff79c6;">⚙️ IMPLEMENTATION</div>
-  <a href="#network" style="color: #e0e0e0;">🌐 Network Stack (VPC)</a>
-  <a href="#database" style="color: #e0e0e0;">🗄️ Database Stack (RDS)</a>
-  <a href="#lambda" style="color: #e0e0e0;">⚡ Lambda Function</a>
-  <a href="#config" style="color: #e0e0e0;">📋 AWS Config &amp; CloudTrail</a>
-  <a href="#dashboard" style="color: #e0e0e0;">📊 Dashboard Deployment</a>
-  
-  <div class="section-title" style="color: #ff79c6;">📜 COMPLIANCE</div>
-  <a href="#frameworks" style="color: #e0e0e0;">📋 Compliance Frameworks</a>
-  <a href="#mapping" style="color: #e0e0e0;">🗺️ Control Mapping</a>
-  
-  <div class="section-title" style="color: #ff79c6;">🧪 TESTING</div>
-  <a href="#testing" style="color: #e0e0e0;">✅ Test Suite</a>
-  <a href="#results" style="color: #e0e0e0;">📊 Test Results</a>
-  
-  <div class="section-title" style="color: #ff79c6;">🎥 DEMONSTRATION</div>
-  <a href="#cli" style="color: #e0e0e0;">💻 CLI Commands</a>
-  <a href="#dashboard-view" style="color: #e0e0e0;">📊 Dashboard View</a>
-  <a href="#demo-video" style="color: #e0e0e0;">🎬 Demo Video</a>
-  <a href="#slides" style="color: #e0e0e0;">📽️ Project Slides</a>
-  <a href="#report" style="color: #e0e0e0;">📄 Project Report</a>
-  
-  <div class="section-title" style="color: #ff79c6;">🎓 CONCLUSION</div>
-  <a href="#outcomes" style="color: #e0e0e0;">📚 Learning Outcomes</a>
-  <a href="#achievements" style="color: #e0e0e0;">🏆 Key Achievements</a>
-  <a href="#challenges" style="color: #e0e0e0;">🔧 Challenges &amp; Solutions</a>
-  <a href="#lessons" style="color: #e0e0e0;">💡 Lessons Learned</a>
-  
-  <div style="margin-top: 20px; padding: 15px 20px; border-top: 1px solid #1a1f3e;">
-    <p style="font-size: 11px; color: #555; margin: 0;">AWS Integrated GRC Platform</p>
-    <p style="font-size: 11px; color: #555; margin: 5px 0 0 0;">Joy Anunwa | GRC208 Capstone</p>
+    <h3>📊 GRC Capstone Project</h3>
+    <p style="font-size: 12px; color: #888; padding: 0 20px 15px 20px; margin: 0;">Joy Anunwa | AWS GRC Platform</p>
+    
+    <div class="section-title">📌 INTRODUCTION</div>
+    <a href="#overview">📄 Project Overview</a>
+    <a href="#problem">⚠️ Problem Statement</a>
+    <a href="#objectives">🎯 Project Objectives</a>
+    
+    <div class="section-title">🏗️ ARCHITECTURE</div>
+    <a href="#architecture">🏛️ System Architecture</a>
+    <a href="#architecture-diagram">📐 Architecture Diagram</a>
+    <a href="#architecture-design">📋 Architecture Design</a>
+    <a href="#tech-stack">💻 Technology Stack</a>
+    <a href="#security">🔒 Security Design</a>
+    
+    <div class="section-title">⚙️ IMPLEMENTATION</div>
+    <a href="#network">🌐 Network Stack (VPC)</a>
+    <a href="#database">🗄️ Database Stack (RDS)</a>
+    <a href="#ec2">🖥️ EC2 Bastion Host</a>
+    <a href="#s3">📦 S3 Buckets</a>
+    <a href="#lambda">⚡ Lambda Function</a>
+    <a href="#cloudwatch-alarm">📊 CloudWatch Alarm</a>
+    <a href="#config">📋 AWS Config &amp; CloudTrail</a>
+    <a href="#dashboard">📊 Dashboard Deployment</a>
+    
+    <div class="section-title">📜 COMPLIANCE</div>
+    <a href="#frameworks">📋 Compliance Frameworks</a>
+    
+    <div class="section-title">🧪 TESTING</div>
+    <a href="#testing">✅ Test Suite</a>
+    <a href="#results">📊 Test Results</a>
+    
+    <div class="section-title">🎥 DEMONSTRATION</div>
+    <a href="#cli">💻 CLI Commands</a>
+    <a href="#dashboard-view">📊 Dashboard View</a>
+    <a href="#demo-video">🎬 Demo Video</a>
+    <a href="#slides">📽️ Project Slides</a>
+    <a href="#report">📄 Project Report</a>
+    
+    <div class="section-title">🎓 CONCLUSION</div>
+    <a href="#outcomes">📚 Learning Outcomes</a>
+    <a href="#achievements">🏆 Key Achievements</a>
+    <a href="#challenges">🔧 Challenges &amp; Solutions</a>
+    <a href="#lessons">💡 Lessons Learned</a>
+    
+    <div style="margin-top: 20px; padding: 15px 20px; border-top: 1px solid #1a1f3e;">
+      <p style="font-size: 11px; color: #555; margin: 0;">AWS Integrated GRC Platform</p>
+      <p style="font-size: 11px; color: #555; margin: 5px 0 0 0;">Joy Anunwa | GRC208 Capstone</p>
+    </div>
   </div>
-       /* Dark Sidebar Styles */
-.sidebar {
-  background: #0a0e27;
-}
-.sidebar a {
-  color: #e0e0e0;
-  transition: all 0.3s ease;
-}
-.sidebar a:hover {
-  background: #1a1f3e;
-  color: #00ff88;
-  padding-left: 28px;
-}
-.sidebar .section-title {
-  color: #ff79c6;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-.sidebar h3 {
-  color: #00ff88;
-}
-</div>
+
+  <div class="content">
+    <h1>AWS Integrated GRC Platform</h1>
+    <p>Governance, Risk, and Compliance Capstone Project by Joy Anunwa</p>
+
     <h2 id="overview">📌 Project Overview</h2>
     <p>The AWS Integrated GRC Platform is a comprehensive Governance, Risk, and Compliance solution that demonstrates how to build, deploy, and manage an enterprise-grade GRC platform using Amazon Web Services.</p>
     <p>This project integrates 13 AWS services to provide continuous compliance monitoring, risk assessment, audit logging, and real-time dashboards for six major compliance frameworks including ISO 27001, NIST CSF, PCI DSS, HIPAA, GDPR, and SOC 2.</p>
@@ -212,7 +200,6 @@
       <li><strong>No central visibility</strong> - Different teams use different spreadsheets</li>
       <li><strong>Difficult to prove to auditors</strong> - Scrambling for evidence during audits</li>
     </ul>
-    <p>The result? Data breaches, regulatory fines, lost customer trust, and in severe cases, executive liability.</p>
 
     <h2 id="objectives">🎯 Project Objectives</h2>
     <ul>
@@ -225,7 +212,7 @@
       <li>Create automated compliance checking and reporting</li>
     </ul>
 
-    <h2 id="architecture">🏗️ System Architecture</h2>
+    <h2 id="architecture">🏛️ System Architecture</h2>
     <p>The platform uses a multi-tier architecture with public and private subnets:</p>
     <ul>
       <li><strong>Public Subnets</strong> - Host the Application Load Balancer (internet-facing)</li>
@@ -234,27 +221,8 @@
       <li><strong>Security Groups</strong> - Act as virtual firewalls controlling traffic</li>
     </ul>
 
-    <h2 id="tech-stack">💻 Technology Stack</h2>
-    <ul>
-      <li><strong>Infrastructure:</strong> AWS CloudFormation, VPC, IAM, KMS</li>
-      <li><strong>Compute:</strong> AWS Lambda (Python 3.11), ECS Fargate</li>
-      <li><strong>Storage:</strong> RDS MySQL, S3, DynamoDB</li>
-      <li><strong>Security &amp; Compliance:</strong> AWS Config, CloudTrail, Security Hub</li>
-      <li><strong>Monitoring:</strong> CloudWatch, SNS</li>
-    </ul>
-
-    <h2 id="security">🔒 Security Design</h2>
-    <ul>
-      <li><strong>Network Security:</strong> VPC with public/private subnet isolation, security groups, NAT Gateway</li>
-      <li><strong>Data Security:</strong> Encryption at rest (RDS, S3, DynamoDB), encryption in transit (TLS)</li>
-      <li><strong>Access Control:</strong> IAM roles with least privilege, MFA enabled</li>
-      <li><strong>Audit &amp; Monitoring:</strong> CloudTrail for API logging, CloudWatch for metrics and alerts</li>
-    </ul>
-    
-    <h2 id="architecture">🏗️ System Architecture</h2>
-
-<h3>Architecture Diagram</h3>
-<pre style="background: #0a0e27; color: #00ff88; padding: 20px; border-radius: 10px; font-family: monospace; font-size: 12px; overflow-x: auto;">
+    <h2 id="architecture-diagram">📐 Architecture Diagram</h2>
+    <pre style="background: #0a0e27; color: #00ff88; padding: 20px; border-radius: 10px; font-family: monospace; font-size: 11px; overflow-x: auto;">
 <span style="color: #ff79c6;">┌─────────────────────────────────────────────────────────────────────────────────────┐</span>
 <span style="color: #ff79c6;">│                           AWS CLOUD - us-east-1 Region                               │</span>
 <span style="color: #ff79c6;">└─────────────────────────────────────────────────────────────────────────────────────┘</span>
@@ -293,17 +261,33 @@
 <span style="color: #ff79c6;">│   Monitoring)   │                 │                │                             │</span>
 <span style="color: #ff79c6;">└─────────────────┴─────────────────┴─────────────────┴─────────────────────────────┘</span>
 </pre>
-<h2 id="architecture-design">📋 Architecture Design</h2>
-<p>The platform follows a multi-tier architecture with the following components:</p>
-<ul>
-  <li><strong>Presentation Layer:</strong> React dashboard hosted on CloudFront with S3</li>
-  <li><strong>Application Layer:</strong> ECS Fargate containers running the GRC application</li>
-  <li><strong>Data Layer:</strong> RDS MySQL for relational data, DynamoDB for real-time status</li>
-  <li><strong>Security Layer:</strong> AWS Config, CloudTrail, IAM, KMS encryption</li>
-  <li><strong>Monitoring Layer:</strong> CloudWatch metrics, alarms, and SNS notifications</li>
-</ul>
 
-<p><strong>Data Flow:</strong> User → ALB → ECS → RDS/Lambda → DynamoDB → CloudWatch → SNS Alerts</p>
+    <h2 id="architecture-design">📋 Architecture Design</h2>
+    <p>The platform follows a multi-tier architecture with the following components:</p>
+    <ul>
+      <li><strong>Presentation Layer:</strong> React dashboard hosted on CloudFront with S3</li>
+      <li><strong>Application Layer:</strong> ECS Fargate containers running the GRC application</li>
+      <li><strong>Data Layer:</strong> RDS MySQL for relational data, DynamoDB for real-time status</li>
+      <li><strong>Security Layer:</strong> AWS Config, CloudTrail, IAM, KMS encryption</li>
+      <li><strong>Monitoring Layer:</strong> CloudWatch metrics, alarms, and SNS notifications</li>
+    </ul>
+
+    <h2 id="tech-stack">💻 Technology Stack</h2>
+    <ul>
+      <li><strong>Infrastructure:</strong> AWS CloudFormation, VPC, IAM, KMS</li>
+      <li><strong>Compute:</strong> AWS Lambda (Python 3.11), ECS Fargate</li>
+      <li><strong>Storage:</strong> RDS MySQL, S3, DynamoDB</li>
+      <li><strong>Security &amp; Compliance:</strong> AWS Config, CloudTrail, Security Hub</li>
+      <li><strong>Monitoring:</strong> CloudWatch, SNS</li>
+    </ul>
+
+    <h2 id="security">🔒 Security Design</h2>
+    <ul>
+      <li><strong>Network Security:</strong> VPC with public/private subnet isolation, security groups, NAT Gateway</li>
+      <li><strong>Data Security:</strong> Encryption at rest (RDS, S3, DynamoDB), encryption in transit (TLS)</li>
+      <li><strong>Access Control:</strong> IAM roles with least privilege, MFA enabled</li>
+      <li><strong>Audit &amp; Monitoring:</strong> CloudTrail for API logging, CloudWatch for metrics and alerts</li>
+    </ul>
 
     <h2 id="network">🌐 Network Stack (VPC)</h2>
     <p>The CloudFormation network stack creates:</p>
@@ -324,7 +308,24 @@
       <li>DynamoDB tables for compliance status, risk register, and controls</li>
       <li>KMS keys for encryption</li>
     </ul>
-    <p>The database contains sample GRC data including 16 security controls, 8 risks, 6 assets, and 5 compliance frameworks.</p>
+
+    <h2 id="ec2">🖥️ EC2 Bastion Host</h2>
+    <p>An EC2 bastion host is deployed in a public subnet to provide secure SSH access to resources in private subnets:</p>
+    <ul>
+      <li><strong>Purpose:</strong> Secure jump server to access RDS database</li>
+      <li><strong>Location:</strong> Public subnet</li>
+      <li><strong>Access:</strong> SSH key pair authentication</li>
+      <li><strong>Security:</strong> Security group allows SSH only from specific IPs</li>
+    </ul>
+
+    <h2 id="s3">📦 S3 Buckets</h2>
+    <p>S3 buckets store all compliance evidence and logs:</p>
+    <ul>
+      <li><strong>Evidence Bucket:</strong> Stores compliance evidence documents with versioning enabled</li>
+      <li><strong>Compliance Reports Bucket:</strong> Stores generated compliance reports</li>
+      <li><strong>Config Logs Bucket:</strong> Stores AWS Config logs</li>
+      <li><strong>CloudTrail Logs Bucket:</strong> Stores audit logs for long-term retention</li>
+    </ul>
 
     <h2 id="lambda">⚡ Lambda Function</h2>
     <p>The compliance monitor Lambda function (Python 3.11) runs on a schedule and:</p>
@@ -334,6 +335,16 @@
       <li>Stores results in DynamoDB</li>
       <li>Generates compliance reports in S3</li>
       <li>Sends SNS alerts when compliance drops below thresholds</li>
+    </ul>
+
+    <h2 id="cloudwatch-alarm">📊 CloudWatch Alarm</h2>
+    <p>CloudWatch alarms monitor the Lambda function for errors:</p>
+    <ul>
+      <li><strong>Alarm Name:</strong> grc-lambda-errors</li>
+      <li><strong>Metric:</strong> Lambda Errors</li>
+      <li><strong>Threshold:</strong> 1 error</li>
+      <li><strong>Action:</strong> Send SNS notification to grc-compliance-alerts</li>
+      <li><strong>Status:</strong> OK (No errors detected)</li>
     </ul>
 
     <h2 id="config">📋 AWS Config &amp; CloudTrail</h2>
@@ -350,7 +361,6 @@
       <li>Risk register with severity levels and scores</li>
       <li>Control implementation status</li>
     </ul>
-    <p>Dashboard URL: <code>https://dvdhoxwdqhbgq.cloudfront.net</code></p>
 
     <h2 id="frameworks">📜 Compliance Frameworks Supported</h2>
     <ul>
@@ -362,88 +372,40 @@
       <li><strong>SOC 2</strong> - Service organization controls</li>
     </ul>
 
-    <h2 id="demo-video">🎬 Demo Video</h2>
-<p>Watch the complete demonstration of the GRC platform below:</p>
-<video controls style="width: 100%; max-width: 800px; border-radius: 10px;">
-  <source src="demo-video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-<p><em>Note: The video will appear here once uploaded.</em></p>
-
-<h2 id="slides">📽️ Project Slides</h2>
-<p>Download the presentation slides:</p>
-<ul>
-  <li><a href="presentation-slides.pdf" target="_blank">📊 GRC Capstone Presentation Slides (PDF)</a></li>
-</ul>
-
-<h2 id="report">📄 Project Report</h2>
-<p>Download the complete project report:</p>
-<ul>
-  <li><a href="project-report.pdf" target="_blank">📝 GRC Capstone Project Report (PDF)</a></li>
-</ul>
+    <h2 id="testing">🧪 Test Results</h2>
+    <div class="test-result">
+      <strong>✅ 22/22 Tests Passed</strong><br><br>
+      <strong>Compliance Monitoring:</strong> 3/3 passed<br>
+      <strong>Risk Assessment:</strong> 3/3 passed<br>
+      <strong>Data Validation:</strong> 4/4 passed<br>
+      <strong>Database Operations:</strong> 3/3 passed<br>
+      <strong>Audit Logging:</strong> 3/3 passed<br>
+      <strong>Integration:</strong> 2/2 passed
+    </div>
 
     <h2 id="cli">💻 AWS CLI Commands</h2>
-<p>Below are the actual AWS CLI commands used by <strong style="color: #00ff88;">Joy Anunwa</strong> to deploy and verify the GRC platform. Click the copy button to copy all commands.</p>
+    <p>Below are the actual AWS CLI commands used by <strong style="color: #00ff88;">Joy Anunwa</strong> to deploy and verify the GRC platform.</p>
 
-<pre id="cli-commands" style="background: #0a0e27; color: #00ff88; padding: 20px; border-radius: 10px; overflow-x: auto; font-family: 'Courier New', monospace; font-size: 14px; border-left: 4px solid #00ff88; box-shadow: 0 4px 12px rgba(0,0,0,0.15); line-height: 1.5;">
+    <pre id="cli-commands" style="background: #0a0e27; color: #00ff88; padding: 20px; border-radius: 10px; overflow-x: auto; font-family: 'Courier New', monospace; font-size: 14px; border-left: 4px solid #00ff88;">
 <span style="color: #ff79c6;">┌─────────────────────────────────────────────────────────────────┐</span>
 <span style="color: #ff79c6;">│     AWS GRC PLATFORM - JOY ANUNWA'S DEPLOYMENT COMMANDS        │</span>
 <span style="color: #ff79c6;">└─────────────────────────────────────────────────────────────────┘</span>
 
-<span style="color: #50fa7b;"># ==========================================</span>
 <span style="color: #50fa7b;"># 1. VERIFY AWS CLI CONFIGURATION</span>
-<span style="color: #50fa7b;"># ==========================================</span>
-<span style="color: #f1fa8c;">aws</span> --version
-<span style="color: #f1fa8c;">aws</span> sts get-caller-identity
+aws --version
+aws sts get-caller-identity
 
-<span style="color: #50fa7b;"># Output:</span>
-<span style="color: #bd93f9;">// User: Joy Anunwa (grc-admin)</span>
-<span style="color: #bd93f9;">// Account: 373706886640</span>
-
-<span style="color: #50fa7b;"># ==========================================</span>
 <span style="color: #50fa7b;"># 2. CLOUDFORMATION STACKS</span>
-<span style="color: #50fa7b;"># ==========================================</span>
-<span style="color: #f1fa8c;">aws</span> cloudformation describe-stacks --region us-east-1 --query <span style="color: #f1fa8c;">"Stacks[?contains(StackName, 'grc')].[StackName,StackStatus]"</span> --output table
+aws cloudformation describe-stacks --region us-east-1 --query "Stacks[?contains(StackName, 'grc')].[StackName,StackStatus]" --output table
 
-<span style="color: #50fa7b;"># Output:</span>
-<span style="color: #bd93f9;">// grc-network    | CREATE_COMPLETE</span>
-<span style="color: #bd93f9;">// grc-database   | CREATE_COMPLETE</span>
-
-<span style="color: #50fa7b;"># ==========================================</span>
 <span style="color: #50fa7b;"># 3. LAMBDA FUNCTION TEST</span>
-<span style="color: #50fa7b;"># ==========================================</span>
-<span style="color: #f1fa8c;">aws</span> lambda invoke --function-name grc-compliance-monitor --region us-east-1 output.json && <span style="color: #f1fa8c;">type</span> output.json
+aws lambda invoke --function-name grc-compliance-monitor --region us-east-1 output.json && type output.json
 
-<span style="color: #50fa7b;"># Output:</span>
-<span style="color: #bd93f9;">// {"statusCode": 200, "body": "{\"message\": \"Compliance check completed\"}"}</span>
-
-<span style="color: #50fa7b;"># ==========================================</span>
 <span style="color: #50fa7b;"># 4. RDS DATABASE STATUS</span>
-<span style="color: #50fa7b;"># ==========================================</span>
-<span style="color: #f1fa8c;">aws</span> rds describe-db-instances --db-instance-identifier grc-database --region us-east-1 --query <span style="color: #f1fa8c;">"DBInstances[0].[DBInstanceIdentifier,DBInstanceStatus]"</span> --output table
+aws rds describe-db-instances --db-instance-identifier grc-database --region us-east-1 --query "DBInstances[0].[DBInstanceIdentifier,DBInstanceStatus]" --output table
 
-<span style="color: #50fa7b;"># Output:</span>
-<span style="color: #bd93f9;">// grc-database   | available</span>
-
-<span style="color: #50fa7b;"># ==========================================</span>
 <span style="color: #50fa7b;"># 5. CLOUDTRAIL AUDIT LOGGING</span>
-<span style="color: #50fa7b;"># ==========================================</span>
-<span style="color: #f1fa8c;">aws</span> cloudtrail get-trail-status --name grc-trail --region us-east-1 --query <span style="color: #f1fa8c;">"IsLogging"</span> --output text
-
-<span style="color: #50fa7b;"># Output:</span>
-<span style="color: #bd93f9;">// True</span>
-
-<span style="color: #50fa7b;"># ==========================================</span>
-<span style="color: #50fa7b;"># 6. PROJECT FILES</span>
-<span style="color: #50fa7b;"># ==========================================</span>
-<span style="color: #f1fa8c;">dir</span> *.yaml *.py *.sql
-
-<span style="color: #50fa7b;"># Output:</span>
-<span style="color: #bd93f9;">// network-stack.yaml</span>
-<span style="color: #bd93f9;">// database-stack.yaml</span>
-<span style="color: #bd93f9;">// lambda_compliance_monitor.py</span>
-<span style="color: #bd93f9;">// test_cases.py</span>
-<span style="color: #bd93f9;">// sample_data.sql</span>
+aws cloudtrail get-trail-status --name grc-trail --region us-east-1 --query "IsLogging" --output text
 
 <span style="color: #ff79c6;">┌─────────────────────────────────────────────────────────────────┐</span>
 <span style="color: #ff79c6;">│     🚀 DEPLOYMENT VERIFIED SUCCESSFULLY BY JOY ANUNWA           │</span>
@@ -451,164 +413,118 @@
 <span style="color: #ff79c6;">└─────────────────────────────────────────────────────────────────┘</span>
 </pre>
 
-<button onclick="copyCommands()" style="background: #0a0e27; color: #00ff88; border: 2px solid #00ff88; padding: 10px 20px; border-radius: 8px; cursor: pointer; margin-top: 15px; font-weight: bold; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.background='#00ff88'; this.style.color='#0a0e27';" onmouseout="this.style.background='#0a0e27'; this.style.color='#00ff88';">📋 COPY ALL COMMANDS</button>
+    <button onclick="copyCommands()" style="background: #0a0e27; color: #00ff88; border: 2px solid #00ff88; padding: 10px 20px; border-radius: 8px; cursor: pointer; margin-top: 15px; font-weight: bold;">📋 COPY ALL COMMANDS</button>
 
-<p style="margin-top: 10px; font-size: 12px; color: #888;">💡 <strong>Pro Tip:</strong> Paste these commands in your terminal to verify the deployment yourself!</p>
+    <h2 id="dashboard-view">📊 Dashboard View</h2>
+    <p>The GRC dashboard provides real-time visibility into compliance status across all frameworks.</p>
 
-<script>
-function copyCommands() {
-  const codeElement = document.getElementById('cli-commands');
-  const fullText = codeElement.innerText;
-  
-  // Extract only the actual commands (lines starting with 'aws' or 'dir')
-  const lines = fullText.split('\n');
-  const commands = lines.filter(line => 
-    line.trim().startsWith('aws') || 
-    line.trim().startsWith('dir') ||
-    line.trim().startsWith('type')
-  ).join('\n');
-  
-  navigator.clipboard.writeText(commands).then(() => {
-    alert('✅ AWS CLI commands copied to clipboard!\n\nPaste them in your terminal to run.');
-  }).catch(() => {
-    alert('❌ Failed to copy. Please select and copy manually.');
-  });
-}
-</script>
-    <h2 id="testing">🧪 Test Results</h2>
-    <div class="test-result">
-      <strong>✅ 22/22 Tests Passed</strong><br><br>
-      <strong>Compliance Monitoring:</strong> 3/3 passed<br>
-      - Compliance percentage calculation<br>
-      - Non-compliant rules detection<br>
-      - Compliance report generation<br><br>
-      <strong>Risk Assessment:</strong> 3/3 passed<br>
-      - Risk score calculation (Probability × Impact)<br>
-      - Risk level classification<br>
-      - Risk matrix values<br><br>
-      <strong>Data Validation:</strong> 4/4 passed<br>
-      - Control ID format validation<br>
-      - Risk status validation<br>
-      - Asset classification validation<br>
-      - Criticality level validation<br><br>
-      <strong>Database Operations:</strong> 3/3 passed<br>
-      - Compliance snapshot structure<br>
-      - Risk register structure<br>
-      - Control record structure<br><br>
-      <strong>Audit Logging:</strong> 3/3 passed<br>
-      - Audit log entry structure<br>
-      - Audit log action types<br>
-      - Audit log entity types<br><br>
-      <strong>Integration:</strong> 2/2 passed<br>
-      - Compliance to risk workflow<br>
-      - Control to audit workflow
+    <div style="background: #f6f8fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+      <h3>📈 Key Performance Indicators</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px;">
+        <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+          <div style="font-size: 28px; font-weight: bold; color: #10b981;">86%</div>
+          <div>Average Compliance</div>
+        </div>
+        <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+          <div style="font-size: 28px; font-weight: bold; color: #dc2626;">1</div>
+          <div>Critical Risks</div>
+        </div>
+        <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+          <div style="font-size: 28px; font-weight: bold; color: #3b82f6;">6</div>
+          <div>Active Frameworks</div>
+        </div>
+        <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+          <div style="font-size: 28px; font-weight: bold; color: #f59e0b;">6</div>
+          <div>Total Risks</div>
+        </div>
+      </div>
     </div>
+
+    <h3>📋 Compliance Frameworks</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin: 20px 0;">
+      <div style="background: white; border-left: 4px solid #10b981; padding: 15px; border-radius: 8px;">
+        <div style="font-weight: bold;">ISO 27001:2022</div>
+        <div style="margin-top: 10px;">
+          <div style="background: #e5e7eb; border-radius: 10px; height: 8px;">
+            <div style="background: #10b981; width: 85%; height: 8px; border-radius: 10px;"></div>
+          </div>
+          <div style="margin-top: 5px;">85% Compliant</div>
+        </div>
+      </div>
+      <div style="background: white; border-left: 4px solid #f59e0b; padding: 15px; border-radius: 8px;">
+        <div style="font-weight: bold;">NIST CSF</div>
+        <div style="margin-top: 10px;">
+          <div style="background: #e5e7eb; border-radius: 10px; height: 8px;">
+            <div style="background: #f59e0b; width: 78%; height: 8px; border-radius: 10px;"></div>
+          </div>
+          <div style="margin-top: 5px;">78% Compliant</div>
+        </div>
+      </div>
+      <div style="background: white; border-left: 4px solid #10b981; padding: 15px; border-radius: 8px;">
+        <div style="font-weight: bold;">PCI DSS</div>
+        <div style="margin-top: 10px;">
+          <div style="background: #e5e7eb; border-radius: 10px; height: 8px;">
+            <div style="background: #10b981; width: 92%; height: 8px; border-radius: 10px;"></div>
+          </div>
+          <div style="margin-top: 5px;">92% Compliant</div>
+        </div>
+      </div>
+      <div style="background: white; border-left: 4px solid #10b981; padding: 15px; border-radius: 8px;">
+        <div style="font-weight: bold;">HIPAA</div>
+        <div style="margin-top: 10px;">
+          <div style="background: #e5e7eb; border-radius: 10px; height: 8px;">
+            <div style="background: #10b981; width: 88%; height: 8px; border-radius: 10px;"></div>
+          </div>
+          <div style="margin-top: 5px;">88% Compliant</div>
+        </div>
+      </div>
+      <div style="background: white; border-left: 4px solid #f59e0b; padding: 15px; border-radius: 8px;">
+        <div style="font-weight: bold;">GDPR</div>
+        <div style="margin-top: 10px;">
+          <div style="background: #e5e7eb; border-radius: 10px; height: 8px;">
+            <div style="background: #f59e0b; width: 81%; height: 8px; border-radius: 10px;"></div>
+          </div>
+          <div style="margin-top: 5px;">81% Compliant</div>
+        </div>
+      </div>
+      <div style="background: white; border-left: 4px solid #10b981; padding: 15px; border-radius: 8px;">
+        <div style="font-weight: bold;">SOC 2</div>
+        <div style="margin-top: 10px;">
+          <div style="background: #e5e7eb; border-radius: 10px; height: 8px;">
+            <div style="background: #10b981; width: 90%; height: 8px; border-radius: 10px;"></div>
+          </div>
+          <div style="margin-top: 5px;">90% Compliant</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="demo-video">🎬 Demo Video</h2>
+    <video controls style="width: 100%; max-width: 800px; border-radius: 10px;">
+      <source src="demo-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p><em>Demo video will appear here once uploaded.</em></p>
+
+    <h2 id="slides">📽️ Project Slides</h2>
+    <ul>
+      <li><a href="presentation-slides.pdf" target="_blank">📊 GRC Capstone Presentation Slides (PDF)</a></li>
+    </ul>
+
+    <h2 id="report">📄 Project Report</h2>
+    <ul>
+      <li><a href="project-report.pdf" target="_blank">📝 GRC Capstone Project Report (PDF)</a></li>
+    </ul>
 
     <h2 id="achievements">🏆 Key Achievements</h2>
     <ul>
       <li>✅ 13 AWS services integrated into a working GRC platform</li>
-      <li>✅ 6 compliance frameworks supported (ISO 27001, NIST, PCI DSS, HIPAA, GDPR, SOC 2)</li>
+      <li>✅ 6 compliance frameworks supported</li>
       <li>✅ 22/22 comprehensive tests passing</li>
       <li>✅ Complete Infrastructure as Code using CloudFormation</li>
       <li>✅ Automated compliance monitoring with Lambda</li>
       <li>✅ Live dashboard accessible via CloudFront</li>
       <li>✅ Audit logging with CloudTrail</li>
-      <li>✅ 500+ CLI commands executed and documented</li>
     </ul>
-
-<h2 id="dashboard-view">📊 Dashboard View</h2>
-<p>The GRC dashboard provides real-time visibility into compliance status across all frameworks.</p>
-
-<div style="background: #f6f8fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
-  <h3>📈 Key Performance Indicators</h3>
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px;">
-    <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-      <div style="font-size: 28px; font-weight: bold; color: #10b981;">86%</div>
-      <div style="font-size: 12px; color: #586069;">Average Compliance</div>
-    </div>
-    <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-      <div style="font-size: 28px; font-weight: bold; color: #dc2626;">1</div>
-      <div style="font-size: 12px; color: #586069;">Critical Risks</div>
-    </div>
-    <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-      <div style="font-size: 28px; font-weight: bold; color: #3b82f6;">6</div>
-      <div style="font-size: 12px; color: #586069;">Active Frameworks</div>
-    </div>
-    <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-      <div style="font-size: 28px; font-weight: bold; color: #f59e0b;">6</div>
-      <div style="font-size: 12px; color: #586069;">Total Risks</div>
-    </div>
-  </div>
-</div>
-
-<h3>📋 Compliance Frameworks</h3>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin: 20px 0;">
-  <div style="background: white; border-left: 4px solid #10b981; padding: 15px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-    <div style="font-weight: bold;">ISO 27001:2022</div>
-    <div style="margin-top: 10px;">
-      <div style="background: #e5e7eb; border-radius: 10px; height: 8px;">
-        <div style="background: #10b981; width: 85%; height: 8px; border-radius: 10px;"></div>
-      </div>
-      <div style="margin-top: 5px; font-size: 14px;">85% Compliant</div>
-    </div>
-  </div>
-  <div style="background: white; border-left: 4px solid #f59e0b; padding: 15px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-    <div style="font-weight: bold;">NIST CSF</div>
-    <div style="margin-top: 10px;">
-      <div style="background: #e5e7eb; border-radius: 10px; height: 8px;">
-        <div style="background: #f59e0b; width: 78%; height: 8px; border-radius: 10px;"></div>
-      </div>
-      <div style="margin-top: 5px; font-size: 14px;">78% Compliant</div>
-    </div>
-  </div>
-  <div style="background: white; border-left: 4px solid #10b981; padding: 15px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-    <div style="font-weight: bold;">PCI DSS</div>
-    <div style="margin-top: 10px;">
-      <div style="background: #e5e7eb; border-radius: 10px; height: 8px;">
-        <div style="background: #10b981; width: 92%; height: 8px; border-radius: 10px;"></div>
-      </div>
-      <div style="margin-top: 5px; font-size: 14px;">92% Compliant</div>
-    </div>
-  </div>
-  <div style="background: white; border-left: 4px solid #10b981; padding: 15px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-    <div style="font-weight: bold;">HIPAA</div>
-    <div style="margin-top: 10px;">
-      <div style="background: #e5e7eb; border-radius: 10px; height: 8px;">
-        <div style="background: #10b981; width: 88%; height: 8px; border-radius: 10px;"></div>
-      </div>
-      <div style="margin-top: 5px; font-size: 14px;">88% Compliant</div>
-    </div>
-  </div>
-  <div style="background: white; border-left: 4px solid #f59e0b; padding: 15px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-    <div style="font-weight: bold;">GDPR</div>
-    <div style="margin-top: 10px;">
-      <div style="background: #e5e7eb; border-radius: 10px; height: 8px;">
-        <div style="background: #f59e0b; width: 81%; height: 8px; border-radius: 10px;"></div>
-      </div>
-      <div style="margin-top: 5px; font-size: 14px;">81% Compliant</div>
-    </div>
-  </div>
-  <div style="background: white; border-left: 4px solid #10b981; padding: 15px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-    <div style="font-weight: bold;">SOC 2</div>
-    <div style="margin-top: 10px;">
-      <div style="background: #e5e7eb; border-radius: 10px; height: 8px;">
-        <div style="background: #10b981; width: 90%; height: 8px; border-radius: 10px;"></div>
-      </div>
-      <div style="margin-top: 5px; font-size: 14px;">90% Compliant</div>
-    </div>
-  </div>
-</div>
-
-<p>The dashboard is accessible live at: <a href="https://joyanunwa-aws-grc-project.netlify.app" target="_blank">https://joyanunwa-aws-grc-project.netlify.app</a></p>
-
-    <h2 id="lessons">💡 Lessons Learned</h2>
-<ul>
-  <li><strong>Infrastructure as Code is powerful</strong> - CloudFormation made redeployment easy after failures</li>
-  <li><strong>Free Tier has limitations</strong> - Backup retention and encryption features are restricted</li>
-  <li><strong>Security groups are critical</strong> - Proper rules are essential for connectivity</li>
-  <li><strong>Always use IAM users</strong> - Never use root account for daily operations</li>
-  <li><strong>Test early, test often</strong> - 22 tests caught issues before presentation</li>
-</ul>
 
     <h2 id="challenges">🔧 Challenges &amp; Solutions</h2>
     <ul>
@@ -620,19 +536,38 @@ function copyCommands() {
       <strong>Solution:</strong> Used EC2 bastion host in same VPC for secure access</li>
       <li><strong>Challenge:</strong> Free Tier backup retention limits<br>
       <strong>Solution:</strong> Set BackupRetentionPeriod to 1 day</li>
-      <li><strong>Challenge:</strong> AWS Config bucket policy insufficient<br>
-      <strong>Solution:</strong> Added proper bucket policy allowing Config to write logs</li>
     </ul>
 
-    <h2 id="conclusion">🎓 Conclusion</h2>
-    <p>This project successfully demonstrates an enterprise-grade GRC platform on AWS that provides:</p>
+    <h2 id="lessons">💡 Lessons Learned</h2>
     <ul>
-      <li><strong>Automation</strong> - No more manual spreadsheets. Compliance is checked continuously.</li>
-      <li><strong>Real-time Visibility</strong> - Executives can see compliance status anytime, not just during audits.</li>
-      <li><strong>Audit Trail</strong> - Every action is logged. When auditors ask for evidence, we have it.</li>
-      <li><strong>Cost Savings</strong> - Automated compliance reduces manual labor and prevents costly fines.</li>
+      <li><strong>Infrastructure as Code is powerful</strong> - CloudFormation made redeployment easy after failures</li>
+      <li><strong>Free Tier has limitations</strong> - Backup retention and encryption features are restricted</li>
+      <li><strong>Security groups are critical</strong> - Proper rules are essential for connectivity</li>
+      <li><strong>Always use IAM users</strong> - Never use root account for daily operations</li>
+      <li><strong>Test early, test often</strong> - 22 tests caught issues before presentation</li>
     </ul>
-    <p>The platform is fully deployed, tested, and documented, ready for presentation.</p>
+
+    <h2 id="outcomes">📚 Conclusion</h2>
+    <p>This project successfully demonstrates an enterprise-grade GRC platform on AWS that provides automation, real-time visibility, audit trails, and cost savings. The platform is fully deployed, tested, and documented, ready for presentation.</p>
   </div>
+
+  <script>
+    function copyCommands() {
+      const codeElement = document.getElementById('cli-commands');
+      const fullText = codeElement.innerText;
+      const lines = fullText.split('\n');
+      const commands = lines.filter(line => 
+        line.trim().startsWith('aws') || 
+        line.trim().startsWith('dir') ||
+        line.trim().startsWith('type')
+      ).join('\n');
+      
+      navigator.clipboard.writeText(commands).then(() => {
+        alert('✅ AWS CLI commands copied to clipboard!');
+      }).catch(() => {
+        alert('❌ Failed to copy. Please select and copy manually.');
+      });
+    }
+  </script>
 </body>
 </html>
