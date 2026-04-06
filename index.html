@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRC Capstone Project</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      display: flex;
+      background: #f5f5f5;
+    }
+    .sidebar {
+      width: 280px;
+      background: #fff;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+      border-right: 1px solid #e1e4e8;
+      padding: 20px 0;
+    }
+    .sidebar h3 {
+      padding: 0 20px 15px;
+      font-size: 16px;
+      color: #24292e;
+      border-bottom: 1px solid #e1e4e8;
+      margin-bottom: 15px;
+    }
+    .sidebar a {
+      display: block;
+      padding: 8px 20px;
+      color: #586069;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .sidebar a:hover {
+      background: #f6f8fa;
+      color: #0366d6;
+    }
+    .sidebar .section-title {
+      font-weight: 600;
+      color: #24292e;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding-left: 20px;
+    }
+    .content {
+      margin-left: 280px;
+      flex: 1;
+      padding: 40px;
+      max-width: calc(100% - 280px);
+    }
+    .content h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #24292e;
+    }
+    .content h2 {
+      font-size: 24px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e1e4e8;
+    }
+    .content h3 {
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .content p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: #24292e;
+    }
+    .content ul, .content ol {
+      margin-left: 20px;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+    .content li {
+      margin-bottom: 8px;
+    }
+    .content code {
+      background: #f6f8fa;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+      font-size: 14px;
+    }
+    .content pre {
+      background: #f6f8fa;
+      padding: 16px;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin: 15px 0;
+    }
+    video {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 20px 0;
+    }
+    .test-result {
+      background: #d4edda;
+      color: #155724;
+      padding: 15px;
+      border-radius: 6px;
+      margin: 15px 0;
+    }
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+      .content {
+        margin-left: 0;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h3>📊 GRC Capstone Project</h3>
+    <div class="section-title">INTRODUCTION</div>
+    <a href="#overview">📌 Project Overview</a>
+    <a href="#problem">⚠️ Problem Statement</a>
+    <a href="#objectives">🎯 Project Objectives</a>
+    
+    <div class="section-title">ARCHITECTURE</div>
+    <a href="#architecture">🏗️ System Architecture</a>
+    <a href="#tech-stack">💻 Technology Stack</a>
+    <a href="#security">🔒 Security Design</a>
+    
+    <div class="section-title">IMPLEMENTATION</div>
+    <a href="#network">🌐 Network Stack (VPC)</a>
+    <a href="#database">🗄️ Database Stack (RDS)</a>
+    <a href="#lambda">⚡ Lambda Function</a>
+    <a href="#config">📋 AWS Config &amp; CloudTrail</a>
+    <a href="#dashboard">📊 Dashboard Deployment</a>
+    
+    <div class="section-title">COMPLIANCE</div>
+    <a href="#frameworks">📜 Compliance Frameworks</a>
+    
+    <div class="section-title">TESTING</div>
+    <a href="#testing">🧪 Test Suite</a>
+    
+    <div class="section-title">DEMONSTRATION</div>
+    <a href="#cli">💻 CLI Commands</a>
+    <a href="#video">🎥 Video Recording</a>
+    
+    <div class="section-title">CONCLUSION</div>
+    <a href="#outcomes">📚 Learning Outcomes</a>
+    <a href="#achievements">🏆 Key Achievements</a>
+    <a href="#challenges">🔧 Challenges &amp; Solutions</a>
+  </div>
+
+  <div class="content">
+    <h1>AWS Integrated GRC Platform</h1>
+    <p>Governance, Risk, and Compliance Capstone Project</p>
+
+    <h2 id="overview">📌 Project Overview</h2>
+    <p>The AWS Integrated GRC Platform is a comprehensive Governance, Risk, and Compliance solution that demonstrates how to build, deploy, and manage an enterprise-grade GRC platform using Amazon Web Services.</p>
+    <p>This project integrates 13 AWS services to provide continuous compliance monitoring, risk assessment, audit logging, and real-time dashboards for six major compliance frameworks including ISO 27001, NIST CSF, PCI DSS, HIPAA, GDPR, and SOC 2.</p>
+
+    <h2 id="problem">⚠️ Problem Statement</h2>
+    <p>Organizations today face increasing complexity in managing multiple compliance frameworks simultaneously. Traditional manual approaches using spreadsheets and emails have serious limitations:</p>
+    <ul>
+      <li><strong>Manual and time-consuming</strong> - Someone must physically check if controls are implemented</li>
+      <li><strong>Reactive, not proactive</strong> - Problems are discovered after they've happened</li>
+      <li><strong>No central visibility</strong> - Different teams use different spreadsheets</li>
+      <li><strong>Difficult to prove to auditors</strong> - Scrambling for evidence during audits</li>
+    </ul>
+    <p>The result? Data breaches, regulatory fines, lost customer trust, and in severe cases, executive liability.</p>
+
+    <h2 id="objectives">🎯 Project Objectives</h2>
+    <ul>
+      <li>Design scalable cloud architectures for GRC applications</li>
+      <li>Implement AWS native security and compliance services</li>
+      <li>Write Infrastructure as Code using CloudFormation</li>
+      <li>Develop serverless applications with AWS Lambda</li>
+      <li>Implement comprehensive audit logging and monitoring</li>
+      <li>Map technical controls to compliance frameworks</li>
+      <li>Create automated compliance checking and reporting</li>
+    </ul>
+
+    <h2 id="architecture">🏗️ System Architecture</h2>
+    <p>The platform uses a multi-tier architecture with public and private subnets:</p>
+    <ul>
+      <li><strong>Public Subnets</strong> - Host the Application Load Balancer (internet-facing)</li>
+      <li><strong>Private Subnets</strong> - Host the RDS database, ECS containers, and Lambda functions</li>
+      <li><strong>VPC</strong> - Isolated network with CIDR 10.0.0.0/16 across two availability zones</li>
+      <li><strong>Security Groups</strong> - Act as virtual firewalls controlling traffic</li>
+    </ul>
+
+    <h2 id="tech-stack">💻 Technology Stack</h2>
+    <ul>
+      <li><strong>Infrastructure:</strong> AWS CloudFormation, VPC, IAM, KMS</li>
+      <li><strong>Compute:</strong> AWS Lambda (Python 3.11), ECS Fargate</li>
+      <li><strong>Storage:</strong> RDS MySQL, S3, DynamoDB</li>
+      <li><strong>Security &amp; Compliance:</strong> AWS Config, CloudTrail, Security Hub</li>
+      <li><strong>Monitoring:</strong> CloudWatch, SNS</li>
+    </ul>
+
+    <h2 id="security">🔒 Security Design</h2>
+    <ul>
+      <li><strong>Network Security:</strong> VPC with public/private subnet isolation, security groups, NAT Gateway</li>
+      <li><strong>Data Security:</strong> Encryption at rest (RDS, S3, DynamoDB), encryption in transit (TLS)</li>
+      <li><strong>Access Control:</strong> IAM roles with least privilege, MFA enabled</li>
+      <li><strong>Audit &amp; Monitoring:</strong> CloudTrail for API logging, CloudWatch for metrics and alerts</li>
+    </ul>
+
+    <h2 id="network">🌐 Network Stack (VPC)</h2>
+    <p>The CloudFormation network stack creates:</p>
+    <ul>
+      <li>VPC with CIDR 10.0.0.0/16</li>
+      <li>2 public subnets (for load balancer)</li>
+      <li>2 private subnets (for database and ECS)</li>
+      <li>Internet Gateway and NAT Gateway</li>
+      <li>Route tables for public and private traffic</li>
+      <li>Security groups for ALB, ECS, and RDS</li>
+    </ul>
+
+    <h2 id="database">🗄️ Database Stack (RDS)</h2>
+    <p>The CloudFormation database stack creates:</p>
+    <ul>
+      <li>RDS MySQL 8.0 instance (db.t3.micro, 20GB storage)</li>
+      <li>S3 buckets for evidence and compliance reports</li>
+      <li>DynamoDB tables for compliance status, risk register, and controls</li>
+      <li>KMS keys for encryption</li>
+    </ul>
+    <p>The database contains sample GRC data including 16 security controls, 8 risks, 6 assets, and 5 compliance frameworks.</p>
+
+    <h2 id="lambda">⚡ Lambda Function</h2>
+    <p>The compliance monitor Lambda function (Python 3.11) runs on a schedule and:</p>
+    <ul>
+      <li>Queries AWS Config for compliance status</li>
+      <li>Calculates compliance percentages</li>
+      <li>Stores results in DynamoDB</li>
+      <li>Generates compliance reports in S3</li>
+      <li>Sends SNS alerts when compliance drops below thresholds</li>
+    </ul>
+
+    <h2 id="config">📋 AWS Config &amp; CloudTrail</h2>
+    <ul>
+      <li><strong>AWS Config</strong> - Continuously monitors resource configurations and evaluates them against compliance rules</li>
+      <li><strong>CloudTrail</strong> - Records every API call for audit purposes, creating an immutable audit trail</li>
+    </ul>
+
+    <h2 id="dashboard">📊 Dashboard Deployment</h2>
+    <p>The GRC dashboard is a React-based web application hosted on CloudFront with S3. It displays:</p>
+    <ul>
+      <li>KPI cards (average compliance, critical risks, active frameworks)</li>
+      <li>Compliance status for each framework with progress bars</li>
+      <li>Risk register with severity levels and scores</li>
+      <li>Control implementation status</li>
+    </ul>
+    <p>Dashboard URL: <code>https://dvdhoxwdqhbgq.cloudfront.net</code></p>
+
+    <h2 id="frameworks">📜 Compliance Frameworks Supported</h2>
+    <ul>
+      <li><strong>ISO 27001:2022</strong> - International information security standard (114 controls)</li>
+      <li><strong>NIST CSF</strong> - US government cybersecurity framework</li>
+      <li><strong>PCI DSS 3.2.1</strong> - Payment card industry standard</li>
+      <li><strong>HIPAA</strong> - Healthcare data protection</li>
+      <li><strong>GDPR</strong> - EU data privacy regulation</li>
+      <li><strong>SOC 2</strong> - Service organization controls</li>
+    </ul>
+
+    <h2 id="video">🎥 Live Demonstration Video</h2>
+    <p>Below is the complete screen recording of the GRC platform demonstration showing CLI commands, AWS Console tour, and dashboard walkthrough:</p>
+    <video controls>
+      <source src="demo-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h2 id="cli">💻 CLI Demonstration</h2>
+    <p>The following AWS CLI commands were used to verify the deployment:</p>
+    <pre><code># Verify AWS CLI configuration
+aws --version
+aws sts get-caller-identity
+
+# Check CloudFormation stacks
+aws cloudformation describe-stacks --region us-east-1 --query "Stacks[?contains(StackName, 'grc')].[StackName,StackStatus]" --output table
+
+# Test Lambda function
+aws lambda invoke --function-name grc-compliance-monitor --region us-east-1 output.json && cat output.json
+
+# Check RDS database status
+aws rds describe-db-instances --db-instance-identifier grc-database --region us-east-1 --query "DBInstances[0].[DBInstanceIdentifier,DBInstanceStatus]" --output table
+
+# Check CloudTrail audit logging
+aws cloudtrail get-trail-status --name grc-trail --region us-east-1 --query "IsLogging" --output text
+
+# List project files
+dir *.yaml *.py *.sql</code></pre>
+
+    <h2 id="testing">🧪 Test Results</h2>
+    <div class="test-result">
+      <strong>✅ 22/22 Tests Passed</strong><br><br>
+      <strong>Compliance Monitoring:</strong> 3/3 passed<br>
+      - Compliance percentage calculation<br>
+      - Non-compliant rules detection<br>
+      - Compliance report generation<br><br>
+      <strong>Risk Assessment:</strong> 3/3 passed<br>
+      - Risk score calculation (Probability × Impact)<br>
+      - Risk level classification<br>
+      - Risk matrix values<br><br>
+      <strong>Data Validation:</strong> 4/4 passed<br>
+      - Control ID format validation<br>
+      - Risk status validation<br>
+      - Asset classification validation<br>
+      - Criticality level validation<br><br>
+      <strong>Database Operations:</strong> 3/3 passed<br>
+      - Compliance snapshot structure<br>
+      - Risk register structure<br>
+      - Control record structure<br><br>
+      <strong>Audit Logging:</strong> 3/3 passed<br>
+      - Audit log entry structure<br>
+      - Audit log action types<br>
+      - Audit log entity types<br><br>
+      <strong>Integration:</strong> 2/2 passed<br>
+      - Compliance to risk workflow<br>
+      - Control to audit workflow
+    </div>
+
+    <h2 id="achievements">🏆 Key Achievements</h2>
+    <ul>
+      <li>✅ 13 AWS services integrated into a working GRC platform</li>
+      <li>✅ 6 compliance frameworks supported (ISO 27001, NIST, PCI DSS, HIPAA, GDPR, SOC 2)</li>
+      <li>✅ 22/22 comprehensive tests passing</li>
+      <li>✅ Complete Infrastructure as Code using CloudFormation</li>
+      <li>✅ Automated compliance monitoring with Lambda</li>
+      <li>✅ Live dashboard accessible via CloudFront</li>
+      <li>✅ Audit logging with CloudTrail</li>
+      <li>✅ 500+ CLI commands executed and documented</li>
+    </ul>
+
+    <h2 id="outcomes">📚 Learning Outcomes</h2>
+    <p>Through this project, I gained hands-on experience with:</p>
+    <ul>
+      <li><strong>Cloud Architecture:</strong> Designing VPC with public/private subnets, multi-AZ deployment</li>
+      <li><strong>AWS Services:</strong> CloudFormation, Lambda, RDS, S3, DynamoDB, Config, CloudTrail, CloudWatch</li>
+      <li><strong>Infrastructure as Code:</strong> Writing and deploying CloudFormation templates</li>
+      <li><strong>Security &amp; Compliance:</strong> IAM roles, security groups, encryption, audit logging</li>
+      <li><strong>Testing:</strong> Writing comprehensive test suites for validation</li>
+      <li><strong>Troubleshooting:</strong> Resolving real-world deployment issues (500+ commands)</li>
+    </ul>
+
+    <h2 id="challenges">🔧 Challenges &amp; Solutions</h2>
+    <ul>
+      <li><strong>Challenge:</strong> CloudFormation S3 encryption syntax error<br>
+      <strong>Solution:</strong> Fixed by wrapping ServerSideEncryptionConfiguration inside BucketEncryption</li>
+      <li><strong>Challenge:</strong> KMS key alias property error<br>
+      <strong>Solution:</strong> Changed KeyId to TargetKeyId</li>
+      <li><strong>Challenge:</strong> RDS connection timeout from local machine<br>
+      <strong>Solution:</strong> Used EC2 bastion host in same VPC for secure access</li>
+      <li><strong>Challenge:</strong> Free Tier backup retention limits<br>
+      <strong>Solution:</strong> Set BackupRetentionPeriod to 1 day</li>
+      <li><strong>Challenge:</strong> AWS Config bucket policy insufficient<br>
+      <strong>Solution:</strong> Added proper bucket policy allowing Config to write logs</li>
+    </ul>
+
+    <h2 id="conclusion">🎓 Conclusion</h2>
+    <p>This project successfully demonstrates an enterprise-grade GRC platform on AWS that provides:</p>
+    <ul>
+      <li><strong>Automation</strong> - No more manual spreadsheets. Compliance is checked continuously.</li>
+      <li><strong>Real-time Visibility</strong> - Executives can see compliance status anytime, not just during audits.</li>
+      <li><strong>Audit Trail</strong> - Every action is logged. When auditors ask for evidence, we have it.</li>
+      <li><strong>Cost Savings</strong> - Automated compliance reduces manual labor and prevents costly fines.</li>
+    </ul>
+    <p>The platform is fully deployed, tested, and documented, ready for presentation.</p>
+  </div>
+</body>
+</html>
