@@ -372,97 +372,95 @@
       <li><strong>SOC 2</strong> - Service organization controls</li>
     </ul>
 
-    <h2 id="testing">🧪 Test Results</h2>
-    <h2 id="results">📊 Detailed Test Results</h2>
-<p>Below are the complete test results from the terminal, showing all 22 tests passing:</p>
+    <h2 id="testing">🧪 Test Suite Overview</h2>
+<p>The comprehensive test suite validates all GRC platform functionality across 8 categories:</p>
 
-<div style="background: #0a0e27; color: #00ff88; padding: 20px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 13px; overflow-x: auto; margin: 20px 0;">
-  <span style="color: #ff79c6;">┌─────────────────────────────────────────────────────────────────┐</span><br>
-  <span style="color: #ff79c6;">│              GRC PLATFORM - COMPREHENSIVE TEST SUITE           │</span><br>
-  <span style="color: #ff79c6;">└─────────────────────────────────────────────────────────────────┘</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_compliance_percentage_calculation (__main__.TestComplianceMonitoring)</span><br>
-  Test compliance percentage calculation ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_compliance_report_generation (__main__.TestComplianceMonitoring)</span><br>
-  Test compliance report generation ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_non_compliant_rules_detection (__main__.TestComplianceMonitoring)</span><br>
-  Test detection of non-compliant rules ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_risk_level_classification (__main__.TestRiskAssessment)</span><br>
-  Test risk level classification based on compliance ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_risk_matrix_values (__main__.TestRiskAssessment)</span><br>
-  Test risk matrix scoring values ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_risk_score_calculation (__main__.TestRiskAssessment)</span><br>
-  Test risk score calculation ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_asset_classification_validation (__main__.TestDataValidation)</span><br>
-  Test asset classification validation ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_control_id_format_validation (__main__.TestDataValidation)</span><br>
-  Test control ID format validation ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_criticality_level_validation (__main__.TestDataValidation)</span><br>
-  Test criticality level validation ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_risk_status_validation (__main__.TestDataValidation)</span><br>
-  Test risk status validation ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_compliance_snapshot_structure (__main__.TestDatabaseOperations)</span><br>
-  Test compliance snapshot data structure ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_control_record_structure (__main__.TestDatabaseOperations)</span><br>
-  Test control record structure ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_risk_register_structure (__main__.TestDatabaseOperations)</span><br>
-  Test risk register data structure ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_framework_control_count (__main__.TestComplianceFrameworks)</span><br>
-  Test framework control count ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_framework_version_format (__main__.TestComplianceFrameworks)</span><br>
-  Test framework version format ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_audit_log_action_types (__main__.TestAuditLogging)</span><br>
-  Test audit log action types ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_audit_log_entity_types (__main__.TestAuditLogging)</span><br>
-  Test audit log entity types ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_audit_log_entry_structure (__main__.TestAuditLogging)</span><br>
-  Test audit log entry structure ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_compliance_report_content (__main__.TestReportGeneration)</span><br>
-  Test compliance report contains required content ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_risk_report_content (__main__.TestReportGeneration)</span><br>
-  Test risk report contains required content ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_compliance_to_risk_workflow (__main__.TestIntegration)</span><br>
-  Test workflow from compliance check to risk assessment ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #50fa7b;">test_control_to_audit_workflow (__main__.TestIntegration)</span><br>
-  Test workflow from control implementation to audit logging ... <span style="color: #00ff88;">ok</span><br>
-  <br>
-  <span style="color: #ff79c6;">┌─────────────────────────────────────────────────────────────────┐</span><br>
-  <span style="color: #ff79c6;">│              ✅ 22/22 TESTS PASSED SUCCESSFULLY                │</span><br>
-  <span style="color: #ff79c6;">└─────────────────────────────────────────────────────────────────┘</span><br>
+<div style="background: #f6f8fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+    <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+      <div style="font-size: 28px; font-weight: bold; color: #10b981;">3</div>
+      <div style="font-size: 14px; font-weight: bold;">Compliance Monitoring</div>
+      <div style="font-size: 12px; color: #586069;">3/3 passed</div>
+    </div>
+    <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+      <div style="font-size: 28px; font-weight: bold; color: #10b981;">3</div>
+      <div style="font-size: 14px; font-weight: bold;">Risk Assessment</div>
+      <div style="font-size: 12px; color: #586069;">3/3 passed</div>
+    </div>
+    <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+      <div style="font-size: 28px; font-weight: bold; color: #10b981;">4</div>
+      <div style="font-size: 14px; font-weight: bold;">Data Validation</div>
+      <div style="font-size: 12px; color: #586069;">4/4 passed</div>
+    </div>
+    <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+      <div style="font-size: 28px; font-weight: bold; color: #10b981;">3</div>
+      <div style="font-size: 14px; font-weight: bold;">Database Operations</div>
+      <div style="font-size: 12px; color: #586069;">3/3 passed</div>
+    </div>
+    <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+      <div style="font-size: 28px; font-weight: bold; color: #10b981;">3</div>
+      <div style="font-size: 14px; font-weight: bold;">Audit Logging</div>
+      <div style="font-size: 12px; color: #586069;">3/3 passed</div>
+    </div>
+    <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+      <div style="font-size: 28px; font-weight: bold; color: #10b981;">2</div>
+      <div style="font-size: 14px; font-weight: bold;">Integration</div>
+      <div style="font-size: 12px; color: #586069;">2/2 passed</div>
+    </div>
+  </div>
+  <div style="margin-top: 20px; text-align: center;">
+    <div style="font-size: 24px; font-weight: bold; color: #10b981;">✅ 22/22 Tests Passing</div>
+    <div style="font-size: 14px; color: #586069;">All test categories passed successfully</div>
+  </div>
 </div>
 
-<p><strong>Test Categories Summary:</strong></p>
-<ul>
-  <li>✅ <strong>Compliance Monitoring:</strong> 3/3 passed</li>
-  <li>✅ <strong>Risk Assessment:</strong> 3/3 passed</li>
-  <li>✅ <strong>Data Validation:</strong> 4/4 passed</li>
-  <li>✅ <strong>Database Operations:</strong> 3/3 passed</li>
-  <li>✅ <strong>Framework Mapping:</strong> 2/2 passed</li>
-  <li>✅ <strong>Audit Logging:</strong> 3/3 passed</li>
-  <li>✅ <strong>Report Generation:</strong> 2/2 passed</li>
-  <li>✅ <strong>Integration:</strong> 2/2 passed</li>
-</ul>
+<p>Click <strong>📊 Test Results</strong> in the left panel to see the detailed terminal output of all 22 tests.</p>
+
+
+<h2 id="testing">🧪 Test Suite Overview</h2>
+<p>The comprehensive test suite validates all GRC platform functionality across 8 categories:</p>
+
+<div style="background: #f6f8fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+    <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+      <div style="font-size: 28px; font-weight: bold; color: #10b981;">3</div>
+      <div style="font-size: 14px; font-weight: bold;">Compliance Monitoring</div>
+      <div style="font-size: 12px; color: #586069;">3/3 passed</div>
+    </div>
+    <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+      <div style="font-size: 28px; font-weight: bold; color: #10b981;">3</div>
+      <div style="font-size: 14px; font-weight: bold;">Risk Assessment</div>
+      <div style="font-size: 12px; color: #586069;">3/3 passed</div>
+    </div>
+    <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+      <div style="font-size: 28px; font-weight: bold; color: #10b981;">4</div>
+      <div style="font-size: 14px; font-weight: bold;">Data Validation</div>
+      <div style="font-size: 12px; color: #586069;">4/4 passed</div>
+    </div>
+    <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+      <div style="font-size: 28px; font-weight: bold; color: #10b981;">3</div>
+      <div style="font-size: 14px; font-weight: bold;">Database Operations</div>
+      <div style="font-size: 12px; color: #586069;">3/3 passed</div>
+    </div>
+    <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+      <div style="font-size: 28px; font-weight: bold; color: #10b981;">3</div>
+      <div style="font-size: 14px; font-weight: bold;">Audit Logging</div>
+      <div style="font-size: 12px; color: #586069;">3/3 passed</div>
+    </div>
+    <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+      <div style="font-size: 28px; font-weight: bold; color: #10b981;">2</div>
+      <div style="font-size: 14px; font-weight: bold;">Integration</div>
+      <div style="font-size: 12px; color: #586069;">2/2 passed</div>
+    </div>
+  </div>
+  <div style="margin-top: 20px; text-align: center;">
+    <div style="font-size: 24px; font-weight: bold; color: #10b981;">✅ 22/22 Tests Passing</div>
+    <div style="font-size: 14px; color: #586069;">All test categories passed successfully</div>
+  </div>
+</div>
+
+<p>Click <strong>📊 Test Results</strong> in the left panel to see the detailed terminal output of all 22 tests.</p>
+
 
 
     <h2 id="cli">💻 AWS CLI Commands</h2>
