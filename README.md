@@ -243,7 +243,9 @@ Watch the complete platform demonstration:
 Video: Demo Video
 
 - **Dashboard:** [https://dvdhoxwdqhbgq.cloudfront.net](https://dvdhoxwdqhbgq.cloudfront.net)
+
 - **Project Website:** [https://joyanunwa-aws-grc-project.netlify.app](https://joyanunwa-aws-grc-project.netlify.app)
+
 🏆 Key Achievements
 ✅ 13 AWS services integrated into a working GRC platform
 
@@ -276,4 +278,4 @@ Course instructors for guidance and support
 
 Open source community for tools and libraries
 
-Live Project URL:- **Project Website:** [https://joyanunwa-aws-grc-project.netlify.app](https://joyanunwa-aws-grc-project.netlify.app)
+- **Project Website:** [https://joyanunwa-aws-grc-project.netlify.app](https://joyanunwa-aws-grc-project.netlify.app)
