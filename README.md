@@ -238,12 +238,11 @@ Deployment Guide	Step-by-step instructions
 Architecture Design	System architecture documentation
 Troubleshooting Guide	Common issues and solutions
 🎥 Live Demonstration
+## 🎥 Live Demonstration
 Watch the complete platform demonstration:
 
-Video: Demo Video
-
+- **Video:** [Demo Video](./demo-video.mp4)
 - **Dashboard:** [https://dvdhoxwdqhbgq.cloudfront.net](https://dvdhoxwdqhbgq.cloudfront.net)
-
 - **Project Website:** [https://joyanunwa-aws-grc-project.netlify.app](https://joyanunwa-aws-grc-project.netlify.app)
 
 🏆 Key Achievements
@@ -278,4 +277,4 @@ Course instructors for guidance and support
 
 Open source community for tools and libraries
 
-- **Project Website:** [https://joyanunwa-aws-grc-project.netlify.app](https://joyanunwa-aws-grc-project.netlify.app)
+
