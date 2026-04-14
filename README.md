@@ -242,7 +242,7 @@ Troubleshooting Guide	Common issues and solutions
 
 Watch the complete platform demonstration:
 
-**Video:** [Demo Video](./demo-video.mp4)
+- **Video:** [Demo Video](./demo-video.mp4)
 
 - **Dashboard:** [https://dvdhoxwdqhbgq.cloudfront.net](https://dvdhoxwdqhbgq.cloudfront.net)
 
