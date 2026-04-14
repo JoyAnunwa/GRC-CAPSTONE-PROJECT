@@ -237,13 +237,16 @@ Presentation Slides	Capstone presentation
 Deployment Guide	Step-by-step instructions
 Architecture Design	System architecture documentation
 Troubleshooting Guide	Common issues and solutions
+
 ## 🎥 Live Demonstration
 
 Watch the complete platform demonstration:
 
-- **Video:** [Demo Video](./demo-video.mp4)
-- **Dashboard:** [Dashboard](https://dvdhoxwdqhbgq.cloudfront.net)
-- **Project Website:** [Website](https://joyanunwa-aws-grc-project.netlify.app)
+<ul>
+  <li><strong>Video:</strong> <a href="./demo-video.mp4">Demo Video</a></li>
+  <li><strong>Dashboard:</strong> <a href="https://dvdhoxwdqhbgq.cloudfront.net">https://dvdhoxwdqhbgq.cloudfront.net</a></li>
+  <li><strong>Project Website:</strong> <a href="https://joyanunwa-aws-grc-project.netlify.app">https://joyanunwa-aws-grc-project.netlify.app</a></li>
+</ul>
 
 🏆 Key Achievements
 ✅ 13 AWS services integrated into a working GRC platform
